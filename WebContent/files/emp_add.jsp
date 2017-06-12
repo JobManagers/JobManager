@@ -14,7 +14,7 @@
 		<link rel="stylesheet" type="text/css" href="../css/jk_zy_baogao.css"/>
          <link rel="stylesheet" href="../css/jquery.ptTimeSelect.css" /><!-- 日历样式 -->
 </head>
-<body>hbw
+<body>
 <!--遮罩层-->
 <div class="zhy_zhezhao_pop " style="height:800px;" ></div>
 <!--遮罩层 end-->	
@@ -153,6 +153,24 @@
 							
 							
 						</tr>
+						
+						<!-----------------------------------  -->
+						<tr>
+							<td align="right">照片：</td>
+							<td align="left">
+							<div class="form-group" id="picDiv">
+								
+								<div class="col-md-5">
+									<!-- 定义表单输入组件 -->
+									<input type="file" id="pic" name="pic" class="form-control"
+										placeholder="请选择雇员照片">
+								</div>
+								<!-- 定义表单错误提示显示元素 -->
+								<div class="col-md-4" id="picMsg"></div>
+							</div>
+							</td> 
+						</tr>
+						<!-- ------------------------------------------ -->
 						<tr>
 							<!-- 
 							<td align="right">紧急联系人：</td>
@@ -189,7 +207,6 @@
 									<span class="date_icon" style="left: 94px;"><i></i></span>
 								</div>
 							</td> 
-							
 						</tr>
 						<tr>
 							<td align="right">入职日期：</td>
