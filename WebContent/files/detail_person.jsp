@@ -153,7 +153,7 @@
 					</div>
 					<div class="panel-body">
 						<table class="zhy_book_table">
-						<!-- -------------此处不用,只是好看--------------------------------------------- -->
+							<!-- -------------此处不用,只是好看--------------------------------------------- -->
 							<tr>
 								<!-- <td align="right" width="120">员工头像：</td>
 									<td align="left" width="40%" height="40%">
@@ -173,8 +173,6 @@
 							</div>
 							<!-- ---------------------------------------------------------- -->
 							</tr> 
-							
-							</tr> 
 							<tr>
 								<td align="right" width="120">员工头像：</td>
 									<td align="left" width="40%" height="40%">
@@ -188,11 +186,10 @@
 									class="form-control inline input150" placeholder="请选择员工姓名" />
 									<!-- <button type="button" class="btn btn_save2" onclick="showPopC('mem_choose')" style="width: auto;padding: 0px 5px;">选择</button> -->
 								</td>
-								 <td align="right" width="5%">创建人</td>
-								<td align="left" width="5%"><input type="text"
-									class="form-control inline input150" placeholder="" />
-									
-								</td> 
+								<td align="right" width="120">email：</td>
+								<td align="left" width="40%"><input type="text"
+									class="form-control inline input150" placeholder="请输入邮箱" /> <!-- <button type="button" class="btn btn_save2" onclick="showPopC('mem_choose')" style="width: auto;padding: 0px 5px;">选择</button> -->
+								</td>
 							</tr>
 							<tr>
 								<td align="right">性别：</td>
@@ -201,11 +198,11 @@
 										onclick="setupLabel()" />男</label>&nbsp;&nbsp;&nbsp;&nbsp; <label
 									class="label_radio"><input type="radio" name="sex"
 										onclick="setupLabel()" />女</label></td>
-								 <td align="right" width="5%">最后修改人</td>
-								<td align="left" width="5%"><input type="text"
-									class="form-control inline input150" placeholder="" />
-								</td> 
-	
+								
+								<td align="right" width="120">新email：</td>
+								<td align="left" width="40%"><input type="text"
+									class="form-control inline input150" placeholder="请输入邮箱" /> <!-- <button type="button" class="btn btn_save2" onclick="showPopC('mem_choose')" style="width: auto;padding: 0px 5px;">选择</button> -->
+								</td>
 							</tr>
 							<tr>
 								<!-- 
@@ -216,30 +213,19 @@
 								<td align="right">身份证号：</td>
 								<td align="left"><input type="text"
 									class="form-control inline input200" placeholder="请输入身份证号" /></td>
-									<td align="right" width="5%">创建日期</td>
-									<td align="left" width="5%"><input type="text"
-										class="form-control inline input150" placeholder="" />
-									</td> 
+								<td align="right">旧密码：</td>
+								<td align="left"><input type="text"
+									class="form-control inline input200" placeholder="请输入旧密码" /></td>
 							</tr>
 							<tr>
 								<td align="right">手机号：</td>
 								<td align="left"><input type="text"
 									class="form-control inline input150" placeholder="请输入手机号" /></td>
-									<td align="right" width="5%">修改日期</td>
-								<td align="left" width="5%"><input type="text"
-									class="form-control inline input150" placeholder="" />
-								</td>
+								<td align="right">新密码：</td>
+								<td align="left"><input type="text"
+									class="form-control inline input200" placeholder="请输入新密码" /></td>
 							</tr>
-							<tr>
-								<td align="right" width="120">email：</td>
-								<td align="left" width="40%"><input type="text"
-									class="form-control inline input150" placeholder="请输入邮箱" /> <!-- <button type="button" class="btn btn_save2" onclick="showPopC('mem_choose')" style="width: auto;padding: 0px 5px;">选择</button> -->
-								</td>
-									<td align="right" width="5%">修改次数</td>
-								<td align="left" width="5%"><input type="text"
-									class="form-control inline input150" placeholder="" />
-								</td> 
-							</tr>
+							
 							<tr>
 								<td align="right">出生日期：</td>
 								<td align="left">
@@ -252,11 +238,10 @@
 											style="left: 94px;"><i></i></span>
 									</div>
 								</td>
-								<td align="right" width="5%">修改日期</td>
-								<td align="left" width="5%"><input type="text"
-									class="form-control inline input150" placeholder="" />
-									
-								</td> 
+								<td align="right">确认密码：</td>
+								<td align="left"><input type="text"
+									class="form-control inline input200" placeholder="请输入新密码" /></td>
+								
 							</tr>
 							<tr>
 								<td align="right">入职日期：</td>
@@ -271,23 +256,7 @@
 									</div>
 								</td>
 								
-								<td align="right">员工状态</td>
-								<td align="left">
-									<div class="btn-group inline ">
-										<button type="button" class="btn btn-default dropdown-text"
-											value="0" style="width: 106px;">请选择</button>
-										<button type="button" class="btn btn-default dropdown-toggle">
-											<span class="caret"></span>
-											 <span class="sr-only">切换下拉菜单</span>
-										</button>
-										<ul class="dropdown-menu">
-											  <li><a value="-1" href="javascript:void(0);">请选择</a></li>
-											<li><a value="1" href="javascript:void(0);">正常</a></li>
-											<li><a value="2" href="javascript:void(0);">离职</a></li>
-											<li><a value="3" href="javascript:void(0);">删除</a></li>
-										</ul>
-									</div>
-								</td> 
+								
 							
 
 							</tr>

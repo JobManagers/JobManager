@@ -136,6 +136,26 @@
 				</div>
 				<div class="panel-body">
 					<table class="zhy_book_table" >
+					<!-- -------------此处不用,只是好看--------------------------------------------- -->
+							<tr>
+								<!-- <td align="right" width="120">员工头像：</td>
+									<td align="left" width="40%" height="40%">
+										<img src="../img/v_2.jpg"  />
+									</td>
+								</td> -->
+								<div class="form-group" id="">
+								
+								<div class="col-md-5" hidden="hidden">
+									<!-- 定义表单输入组件 -->
+									<input type="file" id="" name="pic" class="form-control"
+										placeholder="请选择雇员照片"> 
+										<img src="../img/v_2.jpg"  />
+								</div>
+								<!-- 定义表单错误提示显示元素 -->
+								<div class="col-md-4" id=""></div>
+							</div>
+							<!-- ---------------------------------------------------------- -->
+							</tr> 
 						<tr>
 							<td align="right" width="120">员工姓名：</td>
 							<td align="left" width="40%">
