@@ -173,17 +173,33 @@
 						<tr>
 							<td align="right">出生日期：</td>
 							<td align="left">
-								<input type="text" class="form-control inline input150" placeholder="出生日期" />
-							</td>
-						
+								<!-- <input type="text" class="form-control inline input150" placeholder="出生日期" /> -->
+								<div class="inline relative mr0">
+									<input type="text" class="form-control" style="width: 125px;"
+										id="sTime" name="sTime" readonly="readonly" placeholder="开始日期">
+									<span class="date_icon" style="left: 94px;"><i></i></span>
+								</div>
+							</td> 
+							
 						</tr>
 						<tr>
 							<td align="right">入职日期：</td>
-							<td align="left">
-								<input type="text" class="form-control inline input150" placeholder="入职日期" />
-							</td>
+							 <td align="left">
+								<!-- <input type="text" class="form-control inline input150" placeholder="入职日期" /> -->
+								
+								<div class="inline relative mr0">
+									<input type="text" class="form-control mr0" id="eTime"
+										name="eTime" style="width: 125px;" readonly="readonly" placeholder="结束日期"/>
+									<span class="date_icon" style="left: 94px;"><i></i></span>
+								</div>
+							</td> 
+							
 						
 						</tr>
+						
+						<!-- ---------------------------------- -->
+						
+						<!--  -->
 						<tr>
 							<td align="right">文化程度：</td>
 							<td align="left">
@@ -272,43 +288,78 @@
 	<script type="text/javascript" src="../js/pro.js"></script><!--  省市区的json数据 -->
 	<!-- 省市区联动 e -->
 	<script type="text/javascript">
-	
-		/****
-		***
-		省市区联动 调用
-		*/
-	    $('#jsAddress_0').ganged({'data': provinceList, 'width': 133, 'height': 32});
-	var mydate=new Date();
-	var picker = new Pikaday(
-          {
-            field:document.getElementById("rudate"),
-            firstDay: 1,
-            minDate: new Date('2016/01/01'),
-            maxDate: new Date(),
-            format: 'YYYY/MM/dd',
-            defaultDate:mydate,
-            yearRange: [1900,2330]
-    });
-    
-    var picker_S = new Pikaday(
-          {
-            field:document.getElementById("startDate"),
-            firstDay: 1,
-            minDate: new Date('2016/01/01'),
-            maxDate: new Date(),
-            format: 'YYYY/MM/dd',
-            defaultDate:mydate,
-            yearRange: [1900,2330]
-    });
-    var picker_E = new Pikaday(
-          {
-            field:document.getElementById("endDate"),
-            firstDay: 1,
-            minDate: new Date('2016/01/01'),
-            maxDate: new Date(),
-            format: 'YYYY/MM/dd',
-            defaultDate:mydate,
-            yearRange: [1900,2330]
-    });
-	</script>
+			
+			var mydate= new Date();
+			
+			//---获取当前月最后一天start
+			var yearT =mydate.getFullYear();
+		    var monthT =mydate.getMonth()+1;
+			
+			var daysT ;
+			//当月份为二月时，根据闰年还是非闰年判断天数
+			if(monthT == 2){
+				daysT= yearT % 4 == 0 ? 29 : 28;
+			}else if(monthT == 1 || monthT == 3 || monthT == 5 || monthT == 7 || monthT == 8 || monthT == 10 || monthT == 12){
+			   //月份为：1,3,5,7,8,10,12 时，为大月.则天数为31；
+			  daysT= 31;
+			}else{
+			  //其他月份，天数为：30.
+			  daysT= 30;
+			}
+		  //输出天数
+	      monthT=monthT<10?0+monthT:monthT;
+		  var dT=new Date(yearT+"-"+monthT+"-"+daysT);
+			//---获取当前月最后一天end
+			
+	  	    var year = mydate.getFullYear(), month = mydate.getMonth();
+	  	    year = month == 0 ? year - 1 : year;
+	  	    month = month == 0 ? 11 : month ;
+	  	    var prevFrist = new Date(year, month, 1);
+	  	    
+			var picker_S = new Pikaday({
+	            field:document.getElementById("sTime"),
+	            firstDay: 1,
+	           // maxDate: new Date(),
+	            format: 'YYYY/MM/dd',
+	            defaultDate: prevFrist,
+	            yearRange: [1900,2330],
+	            onOpen:function(){
+	            	//picker_S.setMaxDate(new Date(picker_E));
+	            },
+	            onSelect:function(){
+		           	   var MaxDate= new Date(picker_S);
+		            	var year =MaxDate.getFullYear(),
+		            	    month =MaxDate.getMonth()+1;
+      		        var days ;
+						//当月份为二月时，根据闰年还是非闰年判断天数
+						if(month == 2){
+						        days= year % 4 == 0 ? 29 : 28;
+						}else if(month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12){
+						   //月份为：1,3,5,7,8,10,12 时，为大月.则天数为31；
+						  days= 31;
+						}else{
+						  //其他月份，天数为：30.
+						  days= 30;
+						}
+					  //输出天数
+				      month=month<10?0+month:month;
+					  var d=new Date(year+"-"+month+"-"+days);
+		              picker_E.setMaxDate(d);
+		              picker_E.setDate(d);
+		           }
+			
+		    });
+		    var picker_E = new Pikaday({
+	            field:document.getElementById("eTime"),
+	            firstDay: 1,
+	            minDate: new Date('2016/01/01'),
+	            format: 'YYYY/MM/dd',
+	            defaultDate: dT,
+	            yearRange: [1900,2330],
+	            onOpen:function(){
+	            	picker_E.setMinDate(new Date(picker_S))
+	            }
+		    });
+			
+		</script>
 </html>
