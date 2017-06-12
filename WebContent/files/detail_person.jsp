@@ -140,12 +140,12 @@
 		</div>
 		<div class="main_content create_site">
 			<div class="col-xs-12 col-sm-12 div_bordered ">
-				<div class="jkbg_title_boxa" style="border: 0px">
+				<!-- <div class="jkbg_title_boxa" style="border: 0px">
 					<a href="javascript:history.go(-1);"
 						class="btn_blue pull-right mr15">&lt;&lt;返回</a>
-					<h4>员工详情</h4>
+					<h4>个人信息详情</h4>
 					<div class="divider"></div>
-				</div>
+				</div> -->
 				<div class="panel-body ">
 					<div class="well_head mt0">
 						<!-- <div class="line"></div> -->
