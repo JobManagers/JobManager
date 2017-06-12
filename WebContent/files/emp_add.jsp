@@ -92,7 +92,7 @@
 	      <th width="16%">操作</th>
         </tr> 
      </thead> 
-     <tbody> 
+     <!-- <tbody> 
 	      <tr> 
 	        <td>老张</td>
 	        <td>女</td>
@@ -113,7 +113,7 @@
 	        	<span> <a href="javascript:hidePopC();" class="colorblue">预定</a></span>
 	        </td>
 	      </tr> 
-     </tbody> 
+     </tbody>  -->
     </table>
     <!--分页-->
     <div class="text-center">
@@ -244,7 +244,7 @@
 									<label  class="label_radio r_on"><input type="radio" name="sex" checked="checked" onclick="setupLabel()"/>否</label>&nbsp;&nbsp;&nbsp;&nbsp;
 									<label  class="label_radio"><input type="radio" name="sex" onclick="setupLabel()"/>是</label>
 							</td>
-							
+								
 							
 						</tr>
 						
