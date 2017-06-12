@@ -17,81 +17,6 @@
 		</style>
 	</head>
 	<body>
-		<body>
-		<!--遮罩层-->
-		<div class="zhy_zhezhao_pop " style="height: 800px; display: none;"></div>
-		<!--遮罩层 end-->
-		<div class="zhy_popa zhy_popa_cancel " style="width: 450px;margin-left: -225px;display: none;">
-			<p class="color66">提示<span class="pull-right close_icon" onclick="hidePopC()"></span></p>
-		  	<div class="pop_content">
-			    <p>确定要删除会员【张三】的数据吗?</p>
-			  	<div class="operate_btn pull-right"> 
-			  	    <button type="button" class="btn cancle_yes">确定</button>
-			        <button type="button" class="btn cancle_btn" onclick="hidePopC()">取消</button>
-			  	</div>
-		  	</div>
-		</div>
-		
-		
-		<!--预定详情 s-->
-		<div class="zhy_popa zhy_popa_detail" style="width:750px;margin-left: -375px;">
-		  <p class="color66">预定详情<span class="pull-right close_icon" onclick="hidePop()"> </span></p>
-		  	<div class="mem_jd_block create_site">
-				<div class="well_head mt0">
-					<div class="line"></div>
-					<span class="pull-left" href="javascript:void(0);"><b class="color66">会员信息</b></span>
-				</div>
-				<table class="zhy_jd_table font14 " border="0" >
-					<tr>
-						<td align="right" width="80">姓        名：</td>
-						<td align="left" width="">请输入</td>
-						<td align="right" width="150">居住地址：</td>
-						<td align="left">北京市海淀区中关村软件园8号楼</td>
-					</tr>
-					<tr>
-						<td align="right" >性       别：</td>
-						<td align="left">男</td>
-						<td align="right">自理能力：</td>
-						<td align="left">半自理</td>
-					</tr>
-					<tr>
-						<td align="right">身份证号：</td>
-						<td align="left">110106193910257419</td>
-						<td align="right">紧急联系人：</td>
-						<td align="left">张三疯</td>
-					</tr>
-					<tr>
-						<td align="right">手  机  号：</td>
-						<td align="left">13844556677</td>
-						<td align="right">紧急联系人电话：</td>
-						<td align="left">13866667777</td>
-					</tr>
-				</table>
-				<div class="well_head">
-					<div class="line"></div>
-					<span class="pull-left" href="javascript:void(0);"><b class="color66">预定信息</b></span>
-				</div>
-				<table class="zhy_jd_table font14" border="0" cellspacing="" cellpadding="">
-					<tr>
-						<td align="right" width="80">预定床位：</td>
-						<td align="left" >鸳鸯楼-1层-101房-1床</td>
-					    <td align="right" width="150">计划入住：</td>
-						<td align="left" >2016-09-15</td>
-					</tr>
-					<tr>
-						<td align="right" >预定定金：</td>
-						<td align="left">1000元</td>
-						<td align="right">预留周期：</td>
-						<td align="left">2016-09-18&nbsp;2016-08-13</td>
-					</tr>
-				</table>
-			  	<div class="operate_btn text-right mb_30"> 
-			        <button type="button" class="btn cancle_btn" onclick="hidePopC()">关闭</button>
-			  	</div>
-		   </div>
-		</div>	
-		<!--预定详情 e-->
-		
 		<div class="main_content member_list">
 			<div class="col-xs-12 col-sm-12 div_bordered"> 
 		  		<div class="panel panel-default">
@@ -131,19 +56,18 @@
 					<table class="table table-bordered table_fixed table-multicols table-hover "> 
 						<thead> 
 						  <tr> 
-							<th width="8%" class="border_right">姓名</th> 					
-							<th width="16%" class="border_right">身份证号</th>
-							<th width="11%" class="border_right">手机号码</th>
-							<th width="12%" class="border_right">小组</th>
+						  <th width="11%" class="border_right">小组ID</th>
+							<th width="21%" class="border_right">小组名称</th> 					
+							<th width="16%" class="border_right">组长</th>
 							<th width="12%">操作</th> 
 						   </tr> 
 						</thead> 
 						<tbody>
                            <tr> 
 							<td>倪以彤</td> 
-							<td>555555888888666666</td> 
+							<td>5558</td> 
 							<td>15369339749</td>
-							<td>A组 </td> 
+							
 							<td>
 								<span><a href="emp_informations.jsp" class="colorblue">详情</a></span>
 			
@@ -153,9 +77,9 @@
 
 						  <tr> 
 							<td>倪以彤</td> 
-							<td>555555888888666666</td> 
-							<td>15369339749</td>
-							<td>A组 </td> 
+							<td>5555558</td> 
+							<td>1536</td>
+							 
 							<td>
 								<span><a href="blood_chart.html" class="colorblue">详情</a></span>
 			
