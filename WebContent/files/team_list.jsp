@@ -26,7 +26,7 @@
 							<h4>小组管理</h4>
 						</div>
 				    	<form class="form-inline pl20" role="form">
-							<div class="form-group">小组筛选：
+							<div class="form-group">小组查询：
 								<div class="btn-group inline ">
 								   <button type="button" class="btn btn-default dropdown-text" value="0"  style="width: 106px;">全部</button>
 								   <button type="button" class="btn btn-default dropdown-toggle">
@@ -69,7 +69,7 @@
 							<td>15369339749</td>
 							
 							<td>
-								<span><a href="emp_informations.jsp" class="colorblue">详情</a></span>
+								<span><a href="team_informations.jsp" class="colorblue">详情</a></span>
 			
 								<span><a href="javascript:showPopC('zhy_popa_cancel');" class="colorred">删除</a></span>
 							</td>
