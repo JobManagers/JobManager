@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="renderer" content="webkit"> 
-	<title>Demo</title>
+	<title>排班管理系统</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css" /> 
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/welcome.css" />
@@ -33,7 +33,7 @@
 			<div class="logo fl">
 				<a href="#">
 					<div class="pull-left callstatus ">
-						<p class="font20">Demo</p>
+						<p class="font20">排班管理系统</p>
 					</div>
 				</a>
 			</div>
@@ -47,9 +47,7 @@
 					</p>
 					<ul class="dropdown-menu-header" >
 				      <li><a href="javascript:CreateDiv('person','files/detail_person.jsp','会员信息')">个人信息</a></li>
-				      <li><a href="javascript:CreateDiv('mine','files/my_app_free_list.jsp','我的应用');" >我的应用</a></li>
-				      <li><a href="javascript:CreateDiv('gwc','files/my_app_gwc_list.jsp','购物车');">购物车</a></li>
-				      <li><a href="javascript:CreateDiv('gwc','files/fapiao_list.jsp','购物车');" >我的订单</a></li>
+		
 				      <li><a href="#">安全退出</a></li>
 				    </ul>
 				</div>
