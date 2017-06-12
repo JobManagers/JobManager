@@ -27,23 +27,11 @@
 						</div>
 				    	<form class="form-inline pl20" role="form">
 							<div class="form-group">小组查询：
-								<div class="btn-group inline ">
-								   <button type="button" class="btn btn-default dropdown-text" value="0"  style="width: 106px;">全部</button>
-								   <button type="button" class="btn btn-default dropdown-toggle">
-									  <span class="caret"></span>
-									  <span class="sr-only">切换下拉菜单</span>
-								   </button>
-								   <ul class="dropdown-menu" >
-									  <li><a value="-1" href="javascript:void(0);">全部</a></li>
-									  <li><a value="1" href="javascript:void(0);">A组</a></li>
-									  <li><a value="2" href="javascript:void(0);">B组</a></li>
-								   </ul>
-								</div>
 							</div>
 							
 						    <div class="form-group">
 						   	   <div class="search fl">
-								<input placeholder="请输入姓名/身份证号/手机号码" id="keyWord" type="text">
+								<input placeholder="小组名称" id="keyWord" type="text">
 								<input style="display:none;">
 							   </div>
 						    </div>

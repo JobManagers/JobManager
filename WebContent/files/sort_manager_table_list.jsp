@@ -129,9 +129,69 @@
 <script type="text/javascript" src="../js/jquery.pagination.js"></script>
 	<script type="text/javascript" src="../js/jquery.ptTimeSelect.js" ></script><!--日历插件-->
 		<script type="text/javascript" src="../js/pickday.js" ></script><!--日历插件配置和调用-->
-		<script type="text/javascript">
-		var endDate=$("#eTime").val();
-		 var picker_E = new Pikaday({
+		<script type="text/javascript"> 
+			
+			var mydate= new Date();
+			
+			//---获取当前月最后一天start
+			var yearT =mydate.getFullYear();
+		    var monthT =mydate.getMonth()+1;
+			
+			var daysT ;
+			//当月份为二月时，根据闰年还是非闰年判断天数
+			if(monthT == 2){
+				daysT= yearT % 4 == 0 ? 29 : 28;
+			}else if(monthT == 1 || monthT == 3 || monthT == 5 || monthT == 7 || monthT == 8 || monthT == 10 || monthT == 12){
+			   //月份为：1,3,5,7,8,10,12 时，为大月.则天数为31；
+			  daysT= 31;
+			}else{
+			  //其他月份，天数为：30.
+			  daysT= 30;
+			}
+		  //输出天数
+	      monthT=monthT<10?0+monthT:monthT;
+		  var dT=new Date(yearT+"-"+monthT+"-"+daysT);
+			//---获取当前月最后一天end
+			
+	  	    var year = mydate.getFullYear(), month = mydate.getMonth();
+	  	    year = month == 0 ? year - 1 : year;
+	  	    month = month == 0 ? 11 : month ;
+	  	    var prevFrist = new Date(year, month, 1);
+	  	    
+			var picker_S = new Pikaday({
+	            field:document.getElementById("sTime"),
+	            firstDay: 1,
+	           // maxDate: new Date(),
+	            format: 'YYYY/MM/dd',
+	            defaultDate: prevFrist,
+	            yearRange: [1900,2330],
+	            onOpen:function(){
+	            	//picker_S.setMaxDate(new Date(picker_E));
+	            },
+	            onSelect:function(){
+		           	   var MaxDate= new Date(picker_S);
+		            	var year =MaxDate.getFullYear(),
+		            	    month =MaxDate.getMonth()+1;
+      		        var days ;
+						//当月份为二月时，根据闰年还是非闰年判断天数
+						if(month == 2){
+						        days= year % 4 == 0 ? 29 : 28;
+						}else if(month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12){
+						   //月份为：1,3,5,7,8,10,12 时，为大月.则天数为31；
+						  days= 31;
+						}else{
+						  //其他月份，天数为：30.
+						  days= 30;
+						}
+					  //输出天数
+				      month=month<10?0+month:month;
+					  var d=new Date(year+"-"+month+"-"+days);
+		              picker_E.setMaxDate(d);
+		              picker_E.setDate(d);
+		           }
+			
+		    });
+		    var picker_E = new Pikaday({
 	            field:document.getElementById("eTime"),
 	            firstDay: 1,
 	            minDate: new Date('2016/01/01'),
@@ -142,5 +202,7 @@
 	            	picker_E.setMinDate(new Date(picker_S))
 	            }
 		    });
+			
 		</script>
+		
 		</html>
