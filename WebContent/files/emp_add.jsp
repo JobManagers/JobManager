@@ -138,7 +138,7 @@
 						<tr>
 							<td align="right" width="120">员工姓名：</td>
 							<td align="left" width="40%">
-								<input type="text" class="form-control inline input150"  placeholder="请选择会员"/>
+								<input type="text" class="form-control inline input150"  placeholder="请选择员工姓名"/>
 								<!-- <button type="button" class="btn btn_save2" onclick="showPopC('mem_choose')" style="width: auto;padding: 0px 5px;">选择</button> -->
 							</td>
 							<td align="right" width="160"></td>
@@ -169,6 +169,15 @@
 							<td align="left">
 								<input type="text" class="form-control inline input150" placeholder="请输入手机号" />
 							</td>
+						</tr>
+						<tr>
+							<td align="right" width="120">email：</td>
+							<td align="left" width="40%">
+								<input type="text" class="form-control inline input150"  placeholder="请输入邮箱"/>
+								<!-- <button type="button" class="btn btn_save2" onclick="showPopC('mem_choose')" style="width: auto;padding: 0px 5px;">选择</button> -->
+							</td>
+							<td align="right" width="160"></td>
+							<td align="right" width="60%" ></td>
 						</tr>
 						<tr>
 							<td align="right">出生日期：</td>
@@ -280,14 +289,12 @@
 		</div>
 	</div>
 	</body>
-	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	 <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
 	<script type="text/javascript" src="../js/common.js" ></script>
-	<script type="text/javascript" src="../js/jquery.ptTimeSelect.js" ></script><!--日历插件-->
-	 <!-- 省市区联动 s -->  
+	<script type="text/javascript" src="../js/jquery.ptTimeSelect.js" ></script>
 	<script src="../js/jquery.ganged.select.js" type="text/javascript"></script>
-	<script type="text/javascript" src="../js/pro.js"></script><!--  省市区的json数据 -->
-	<!-- 省市区联动 e -->
-	<script type="text/javascript">
+	<script type="text/javascript" src="../js/pro.js"></script> 
+	<script type="text/javascript"> 
 			
 			var mydate= new Date();
 			
