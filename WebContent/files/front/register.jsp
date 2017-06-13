@@ -8,7 +8,6 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
         <!-- CSS -->
         <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'>
         <link rel="stylesheet" href="../../assets/css/reset.css">
@@ -28,6 +27,9 @@
             <form action="" method="post">
                 <input type="text" name="username" class="username" placeholder="请输入新的用户名">
                 <input type="password" name="password" class="password" placeholder="请输入新的密码">
+                <input type="password" name="newpassword" class="newpassword" placeholder="请重复新密码">
+                <input type="text" name="email" class="email" placeholder="请输入邮箱">
+                
                 <button type="submit">完成</button>
                  <button type="reset">重置</button>
                   <!--<button type="reg">注册</button>
