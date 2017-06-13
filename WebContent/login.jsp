@@ -36,7 +36,7 @@
                          <input type="text" name="num" class="num" placeholder="请输入验证码"  style="width:190px" >
                     </td>
                      <td>
-                           <img id="imageCode" src="image.jsp" style="width:70px">
+                           <img id="imageCode" src="assets/image.jsp" style="width:70px">
                          <!--<input type="text" name="num" class="num" placeholder="验证码"  style="width:70px" >-->
                     </td>
 
