@@ -1,6 +1,7 @@
-
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
+
     <head>
 
         <meta charset="utf-8">
@@ -30,9 +31,36 @@
             <form action="" method="post">
                 <input type="text" name="username" class="username" placeholder="用户名">
                 <input type="password" name="password" class="password" placeholder="密码">
+                <tr>
+                    <td>
+                         <input type="text" name="num" class="num" placeholder="请输入验证码"  style="width:190px" >
+                    </td>
+                     <td>
+                           <img id="imageCode" src="image.jsp" style="width:70px">
+                         <!--<input type="text" name="num" class="num" placeholder="验证码"  style="width:70px" >-->
+                    </td>
+
+
+
+                </tr>
+                
                 <button type="submit">点击登录</button>
                 
                  <button type="reset">重置</button>
+
+                 <tr >
+                    <td >
+                         <!--<button type="submit" style="width:70px">注册</button>-->
+                         <a href="www.baidu.com" >注册</a>
+                    </td>
+                    <td>
+                          <!--<input type="text" name="num" class="num" placeholder="请输入验证码"  style="width:140px" >-->
+                         <!--<button type="submit" style="width:140px" >找回密码</button>-->
+                           <a href="www.baidu.com">找回密码 </a>
+                    </td>
+                 </tr>
+                  <!--<button type="reg">注册</button>
+                   <button type="recherche">找回密码</button>-->
                 <div class="error"><span>+</span></div>
             </form>
       
