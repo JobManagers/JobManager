@@ -3,7 +3,7 @@
 <html lang="en" class="no-js">
     <head>
         <meta charset="utf-8">
-        <title>登陆</title>
+        <title>找回密码功能</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
@@ -23,12 +23,13 @@
 
     <body>
         <div class="page-container">
-            <h1>注册</h1>
+            <h1>找回密码</h1>
             <form action="" method="post">
-                <input type="text" name="username" class="username" placeholder="请输入新的用户名">
-                <input type="password" name="password" class="password" placeholder="请输入新的密码">
-                <input type="password" name="newpassword" class="newpassword" placeholder="请重复新密码">
-                <input type="text" name="email" class="email" placeholder="请输入邮箱">
+                <input type="text" name="username" class="username" placeholder="请输入您的用户名">
+<!--                 <input type="password" name="password" class="password" placeholder="请输入新的密码">
+                <input type="password" name="newpassword" class="newpassword" placeholder="请重复新密码"> -->
+                <input type="text" name="reovcer_email" class="reovcer_email" placeholder="请输入邮箱"  >
+                <input type="text" name="reovcer_copy_email" class="reovcer_copy_email" placeholder="请再次输入邮箱"  oncopy="return false;" onpaste="return false;" oncut="return false;">
                 
                 <button type="submit">完成</button>
                  <button type="reset">重置</button>

@@ -56,7 +56,7 @@
                     <td>
                           <!--<input type="text" name="num" class="num" placeholder="请输入验证码"  style="width:140px" >-->
                          <!--<button type="submit" style="width:140px" >找回密码</button>-->
-                           <a href="www.baidu.com">找回密码 </a>
+                           <a href="files/front/recover.jsp">找回密码 </a>
                     </td>
                  </tr>
                   <!--<button type="reg">注册</button>

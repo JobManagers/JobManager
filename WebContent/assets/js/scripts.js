@@ -6,6 +6,8 @@ jQuery(document).ready(function() {
         var password = $(this).find('.password').val();
         var newpassword = $(this).find('.newpassword').val();
         var email = $(this).find('.email').val();
+        var reovcer_email = $(this).find('.reovcer_email').val();
+        var reovcer_copy_email = $(this).find('.reovcer_copy_email').val();
         
         var num = $(this).find('.num').val();
         
@@ -52,6 +54,26 @@ jQuery(document).ready(function() {
             });
             $(this).find('.error').fadeIn('fast', function(){
                 $(this).parent().find('.num').focus();
+            });
+            return false;
+        }
+        
+        
+        if(reovcer_email == '') {
+            $(this).find('.error').fadeOut('fast', function(){
+                $(this).css('top', '96px');
+            });
+            $(this).find('.error').fadeIn('fast', function(){
+                $(this).parent().find('.reovcer_email').focus();
+            });
+            return false;
+        }
+        if(reovcer_copy_email == '') {
+            $(this).find('.error').fadeOut('fast', function(){
+                $(this).css('top', '163px');
+            });
+            $(this).find('.error').fadeIn('fast', function(){
+                $(this).parent().find('.reovcer_copy_email').focus();
             });
             return false;
         }
