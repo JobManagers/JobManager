@@ -93,8 +93,8 @@
 								<td>张三</td>
 								<td>2017-06-01</td> 							
 								<td>
-									<span><a href="#" class="colorblue">查看</a></span>
-									<span><a href="#" class="colorblue">修改</a></span>			
+									<span><a href="sort_manager_table_look.jsp" class="colorblue">查看</a></span>
+									<span><a href="sort_manager_table_motify.jsp" class="colorblue">修改</a></span>			
 									<span><a href="#" class="colorred">删除</a></span>
 								</td>
 						  </tr>
@@ -106,8 +106,8 @@
 								<td>张三</td>
 								<td>2017-06-01</td> 							
 								<td>
-									<span><a href="#" class="colorblue">查看</a></span>
-									<span><a href="#" class="colorblue">修改</a></span>			
+									<span><a href="sort_manager_table_look.jsp" class="colorblue">查看</a></span>
+									<span><a href="sort_manager_table_motify.jsp" class="colorblue">修改</a></span>			
 									<span><a href="#" class="colorred">删除</a></span>
 								</td>
 						  </tr>
