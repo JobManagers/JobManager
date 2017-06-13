@@ -145,14 +145,14 @@
 				      <label for="name1" class="col-sm-2 control-label">排班类型：</label>
 				      <div class="col-sm-10" id="sex1_1">
 					      	<div class="checkbox-inline">
-					           <label class="label_radio r_on">
+					           
 					               <input type="radio" name="shiftType"  onclick="cleanChosen()" checked="checked" value="1">组员排班
-					            </label>
+					            
 					          </div>
 					          <div class="checkbox-inline">
-					            <label class="label_radio">
+					            
 					               <input type="radio" name="shiftType"  onclick="setupLabel()" value="2">小组排班
-					            </label>
+					            
 					          </div>
 			          </div>
 				   </div>
@@ -247,7 +247,7 @@
 				   	<div style="height: 50px;"></div>
 				   	  <div class="divider"></div>
 				      <div class="text-align:left;" id="setjoyRide">
-						<button type="button" class="btn btn_green" onclick="addShiftTableNext()">下一步</button>
+						<button type="button" class="btn btn_green" onclick="addShiftTableNext()" >下一步</button>
 						<button type="button" class="btn btn_whites" id="member_exit">取消</button>
 				      </div>
 				   </div>
@@ -477,6 +477,9 @@
 			}
 			
 			function addShiftTableNext(){
+			//排班表链接,写action重写
+				window.location.href="sort_manager_table_informations.jsp";
+			//----------------------------------------
 				$("#addShiftTableForm").validationEngine({promptPosition: "inline"});
 				var tableName=$("#tableName").val();
 				var shiftPlanBaseId=$("#shiftPlanBaseId").val();
@@ -530,6 +533,7 @@
 							var startDateStr=obj.startDateStr;
 							var endDateStr=obj.endDateStr;
 							//注意：此处只是注释掉而已
+							
 							//window.location.href="../shiftTable/editShiftTable?startDateStr="+startDateStr+"&endDateStr="+endDateStr+"&shiftTableBaseId="+shiftTableBaseId+"&tableName="+tableName+"&shiftType="+shiftType+"&updateMark=no";
 						}else{
 							hidePopC();

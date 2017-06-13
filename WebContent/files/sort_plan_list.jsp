@@ -69,7 +69,7 @@
 							<td>三班倒排班方案A</td> 
 							<td>两天中班-2天休-2天晚班-2天早班 循环</td> 
 							<td>
-								<span><a href="#" class="colorblue">详情</a></span>
+								<span><a href="sort_plan_information.jsp" class="colorblue">详情</a></span>
 			
 								<span><a href="javascript:showPopC('zhy_popa_cancel');" class="colorred">删除</a></span>
 							</td>

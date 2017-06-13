@@ -65,7 +65,7 @@
 		  <div class='div_bordered'>
 		  	<div class="panel panel-default choose_block">
 		  		<a href="sort_plan_list.jsp" class="colorbg font14 pull-right mr15">&lt;&lt;返回列表</a>
-		  		<div class="panel-heading color333">新增排班方案</div>
+		  		<div class="panel-heading color333">排班方案详情</div>
 		  		<div class="divider">
 		  		</div>
 				<form class="form-horizontal old_block" action="../shiftPlan/addShiftPlan" id="addShiftPlanForm" role="form" data-ajax="true" data-ajax-success="shiftPlanAddOnSuccess" method="post">

@@ -41,7 +41,7 @@
 				<div class="login_box  pull-right btn-group">
 					<p class="dropdown-toggle">
 						<span>
-							<i class="icon_level h_vip"></i>哈木琳洁001
+							<i class="icon_level h_vip"></i>个人中心
 						</span>
 						<i class="arrow_down"></i>
 					</p>
@@ -52,7 +52,7 @@
 				    </ul>
 				</div>
 				<div class="mes pull-right"><a href="#"></a></div>
-				<div class="mes advice pull-right"><!--<a href="#">帮助与反馈</a>-->帮助与反馈</div>
+				<!-- <div class="mes advice pull-right"><a href="#">帮助与反馈</a>帮助与反馈</div> -->
 				
 				
 			</div>
