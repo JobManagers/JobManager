@@ -1,9 +1,7 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-
     <head>
-
         <meta charset="utf-8">
         <title>Fullscreen Login</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
