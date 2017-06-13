@@ -32,6 +32,7 @@
                 
                 <button type="submit">完成</button>
                  <button type="reset">重置</button>
+                 <a href="../../login.jsp">返回登录页面</a>
                   <!--<button type="reg">注册</button>
                    <button type="recherche">找回密码</button>-->
                 <div class="error"><span>+</span></div>
