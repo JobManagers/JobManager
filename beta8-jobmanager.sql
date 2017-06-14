@@ -103,19 +103,19 @@ CREATE TABLE `member` (
 -- ----------------------------
 -- Records of member
 -- ----------------------------
-INSERT INTO `member` VALUES ('admin', '123', '12', '1');
-INSERT INTO `member` VALUES ('superadmin', '123', '13', '1');
-INSERT INTO `member` VALUES ('user1', '123', '1', '1');
-INSERT INTO `member` VALUES ('user10', '123', '10', '1');
-INSERT INTO `member` VALUES ('user11', '123', '11', '1');
-INSERT INTO `member` VALUES ('user2', '123', '2', '1');
-INSERT INTO `member` VALUES ('user3', '123', '3', '1');
-INSERT INTO `member` VALUES ('user4', '123', '4', '1');
-INSERT INTO `member` VALUES ('user5', '123', '5', '1');
-INSERT INTO `member` VALUES ('user6', '123', '6', '1');
-INSERT INTO `member` VALUES ('user7', '123', '7', '1');
-INSERT INTO `member` VALUES ('user8', '123', '8', '1');
-INSERT INTO `member` VALUES ('user9', '123', '9', '1');
+INSERT INTO `member` VALUES ('admin', '2E866BF58289E01583AD418F486A69DF', '12', '1');
+INSERT INTO `member` VALUES ('superadmin', '2E866BF58289E01583AD418F486A69DF', '13', '1');
+INSERT INTO `member` VALUES ('user1', '2E866BF58289E01583AD418F486A69DF', '1', '1');
+INSERT INTO `member` VALUES ('user10', '2E866BF58289E01583AD418F486A69DF', '10', '1');
+INSERT INTO `member` VALUES ('user11', '2E866BF58289E01583AD418F486A69DF', '11', '1');
+INSERT INTO `member` VALUES ('user2', '2E866BF58289E01583AD418F486A69DF', '2', '1');
+INSERT INTO `member` VALUES ('user3', '2E866BF58289E01583AD418F486A69DF', '3', '1');
+INSERT INTO `member` VALUES ('user4', '2E866BF58289E01583AD418F486A69DF', '4', '1');
+INSERT INTO `member` VALUES ('user5', '2E866BF58289E01583AD418F486A69DF', '5', '1');
+INSERT INTO `member` VALUES ('user6', '2E866BF58289E01583AD418F486A69DF', '6', '1');
+INSERT INTO `member` VALUES ('user7', '2E866BF58289E01583AD418F486A69DF', '7', '1');
+INSERT INTO `member` VALUES ('user8', '2E866BF58289E01583AD418F486A69DF', '8', '1');
+INSERT INTO `member` VALUES ('user9', '2E866BF58289E01583AD418F486A69DF', '9', '1');
 
 -- ----------------------------
 -- Table structure for member_role
