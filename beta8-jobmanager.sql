@@ -4,16 +4,47 @@ Navicat MySQL Data Transfer
 Source Server         : mldn
 Source Server Version : 50022
 Source Host           : localhost:3306
-Source Database       : mldn
+Source Database       : jobmanager
 
 Target Server Type    : MYSQL
 Target Server Version : 50022
 File Encoding         : 65001
 
-Date: 2017-06-13 01:09:21
+Date: 2017-06-14 09:23:05
 */
 
 SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for action
+-- ----------------------------
+DROP TABLE IF EXISTS `action`;
+CREATE TABLE `action` (
+  `actid` varchar(50) NOT NULL,
+  `title` varchar(200) default NULL,
+  `rid` varchar(50) default NULL,
+  PRIMARY KEY  (`actid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of action
+-- ----------------------------
+INSERT INTO `action` VALUES ('emp:add', '员工添加', 'emp');
+INSERT INTO `action` VALUES ('emp:delete', '员工删除', 'emp');
+INSERT INTO `action` VALUES ('emp:edit', '员工编辑', 'emp');
+INSERT INTO `action` VALUES ('emp:list', '员工列表', 'emp');
+INSERT INTO `action` VALUES ('shift_plan_manager:add', '排班方案添加', 'shift_plan_manager');
+INSERT INTO `action` VALUES ('shift_plan_manager:delete', '排班方案删除', 'shift_plan_manager');
+INSERT INTO `action` VALUES ('shift_plan_manager:edit', '排班方案编辑', 'shift_plan_manager');
+INSERT INTO `action` VALUES ('shift_plan_manager:list', '排班方案列表', 'shift_plan_manager');
+INSERT INTO `action` VALUES ('shift_table_manager:add', '排班表添加', 'shift_table_manager');
+INSERT INTO `action` VALUES ('shift_table_manager:delete', '排班表删除', 'shift_table_manager');
+INSERT INTO `action` VALUES ('shift_table_manager:edit', '排班表编辑', 'shift_table_manager');
+INSERT INTO `action` VALUES ('shift_table_manager:list', '排班表添加', 'shift_table_manager');
+INSERT INTO `action` VALUES ('team:add', '小组添加', 'team');
+INSERT INTO `action` VALUES ('team:delete', '小组删除', 'team');
+INSERT INTO `action` VALUES ('team:edit', '小组编辑', 'team');
+INSERT INTO `action` VALUES ('team:list', '小组列表', 'team');
 
 -- ----------------------------
 -- Table structure for employee_info
@@ -72,6 +103,8 @@ CREATE TABLE `member` (
 -- ----------------------------
 -- Records of member
 -- ----------------------------
+INSERT INTO `member` VALUES ('admin', '123', '12', '1');
+INSERT INTO `member` VALUES ('superadmin', '123', '13', '1');
 INSERT INTO `member` VALUES ('user1', '123', '1', '1');
 INSERT INTO `member` VALUES ('user10', '123', '10', '1');
 INSERT INTO `member` VALUES ('user11', '123', '11', '1');
@@ -83,6 +116,48 @@ INSERT INTO `member` VALUES ('user6', '123', '6', '1');
 INSERT INTO `member` VALUES ('user7', '123', '7', '1');
 INSERT INTO `member` VALUES ('user8', '123', '8', '1');
 INSERT INTO `member` VALUES ('user9', '123', '9', '1');
+
+-- ----------------------------
+-- Table structure for member_role
+-- ----------------------------
+DROP TABLE IF EXISTS `member_role`;
+CREATE TABLE `member_role` (
+  `mid` varchar(50) NOT NULL,
+  `rid` varchar(50) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of member_role
+-- ----------------------------
+INSERT INTO `member_role` VALUES ('admin', 'shift_table_manager');
+INSERT INTO `member_role` VALUES ('admin', 'shift_plan_manager');
+INSERT INTO `member_role` VALUES ('superadmin', 'emp');
+INSERT INTO `member_role` VALUES ('superadmin', 'team');
+INSERT INTO `member_role` VALUES ('superadmin', 'shift_table_manager');
+INSERT INTO `member_role` VALUES ('superadmin', 'shift_plan_manager');
+INSERT INTO `member_role` VALUES ('user1', 'shift_table_manager');
+INSERT INTO `member_role` VALUES ('user2', 'shift_table_manager');
+INSERT INTO `member_role` VALUES ('user3', 'shift_table_manager');
+INSERT INTO `member_role` VALUES ('user', null);
+INSERT INTO `member_role` VALUES ('user5', 'shift_table_manager');
+
+-- ----------------------------
+-- Table structure for role
+-- ----------------------------
+DROP TABLE IF EXISTS `role`;
+CREATE TABLE `role` (
+  `rid` varchar(50) NOT NULL,
+  `title` varchar(50) default NULL,
+  PRIMARY KEY  (`rid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of role
+-- ----------------------------
+INSERT INTO `role` VALUES ('emp', '员工管理');
+INSERT INTO `role` VALUES ('shift_plan_manager', '排班方案管理');
+INSERT INTO `role` VALUES ('shift_table_manager', '排班表管理');
+INSERT INTO `role` VALUES ('team', '小组管理');
 
 -- ----------------------------
 -- Table structure for shift_plan_base
